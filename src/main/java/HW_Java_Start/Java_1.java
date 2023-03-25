@@ -22,10 +22,10 @@ public class Java_1 {
         // Переполнение
         byte a1 = 127;
         System.out.println("!!! Переполнение №1 = " + (a1 + 1));
-        System.out.println("!!! Переполнение №2 = : " + (byteMaxVal + 1));
+        System.out.println("!!! Переполнение №2 = " + (byteMaxVal + 1));
         byte y = Byte.MAX_VALUE;
         byte u = y + 5;
-        System.out.println("!!! Переполнение №3 = : " + (u));
+        System.out.println("!!! Переполнение №3 = " + (u));
 
         // Вычисления комбинаций типов данных (int и double)
         int w = 70;
