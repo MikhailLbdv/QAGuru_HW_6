@@ -2,6 +2,7 @@ package HW_Java_Start;
 
 public class Java_1 {
     public static byte byteMaxVal = Byte.MAX_VALUE;
+    public static int intMaxVal = Integer.MAX_VALUE;
     public static void main(String[] args) {
         // Логические операторы
         System.out.println("!!! Логическое 'И': " + (3 > 2 && 4 > 3)); // && (И)
@@ -20,12 +21,13 @@ public class Java_1 {
         System.out.println("!!! c % b = " + (c % b)); // % Остаток от деления
 
         // Переполнение
-        byte a1 = 127;
-        System.out.println("!!! Переполнение №1 = " + (a1 + 1));
-        System.out.println("!!! Переполнение №2 = " + (byteMaxVal + 1));
-        byte y = Byte.MAX_VALUE;
-        byte u = y + 5;
-        System.out.println("!!! Переполнение №3 = " + (u));
+        int a1 = 2147483647;
+        int b1 = a1 + 1;
+        System.out.println("!!! Переполнение №1 = " + b1);
+        byte a2 = 127;
+        byte b2 = 1;
+        System.out.println("!!! Переполнение №2 = " + (byte) (a2 + b2));
+        System.out.println("!!! Переполнение №3 = " + (intMaxVal + 1));
 
         // Вычисления комбинаций типов данных (int и double)
         int w = 70;
